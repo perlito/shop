@@ -1,0 +1,10 @@
+DROP FUNCTION IF EXISTS update_utime();
+
+CREATE FUNCTION update_utime() RETURNS TRIGGER AS
+$body$
+BEGIN
+END;
+$body$
+LANGUAGE plpgsql VOLATILE;
+
+ALTER FUNCTION update_utime OWNER TO mart;
